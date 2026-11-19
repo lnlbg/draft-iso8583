@@ -1,0 +1,22 @@
+[package]
+name = "draft-iso8583"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+authors = ["Lachezar Lazarow <lnlbg@yahoo.com>"]
+description = "Zero-copy, zero-allocation no_std ISO 8583:1987 (ASCII + Raw Binary) parser and builder"
+repository = "https://github.com/lnlbg/draft-iso8583"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+
+[features]
+default = ["std"]
+std = []
+
+[lib]
+name = "draft_iso8583"
+path = "src/lib.rs"
+
+[[bin]]
+name = "app"
+path = "src/main.rs"
